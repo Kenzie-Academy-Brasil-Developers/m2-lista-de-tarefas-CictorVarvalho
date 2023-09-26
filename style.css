@@ -1,0 +1,150 @@
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__container{
+    color: #3b5bdb;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__content {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.header__input--search {
+    width: 60%;
+    padding-left: 15px;
+}
+
+.input__box {
+    background-color: #ebebeb;
+    border: 0px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.main__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e2e2e2;
+}
+
+.form__container {
+    width: 60%;
+    margin-top: 25px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 40px 30px 40px 30px;
+}
+
+.form__title {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.form__input-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__input--text {
+    width: 60%;
+    padding-left: 15px;
+}
+
+.input__box {
+    background-color: #ebebeb;
+    border: 0px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.form__input--priority {
+    width: 35%;
+    padding-left: 15px;
+}
+
+.form__button--add-task {
+    margin-top: 20px;
+    width: 100%;
+    border: 0px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #3b5bdb;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.tasks__container {
+    width: 60%;
+    margin-top: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    background-color: #ffffff;
+    padding: 40px 30px 40px 30px;
+}
+
+.tasks__container h2 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.tasks__list {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.task__item {
+    margin-top: 5px;
+    background-color: #f1f3f5;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    padding-left: 20px;
+}
+
+.task-info__container {
+    display: flex;
+    align-items: center;
+}
+
+.span-urgent {
+    color: #e40404;
+}
+
+.task-type {
+    font-size: 40px;
+}
+
+.task__button--remove-task {
+    background-image: url(./assets/trash-icon.svg);
+    width: 12px;
+    height: 14px;
+    border: none;
+}
