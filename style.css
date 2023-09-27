@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     width: 100%;
     display: flex;
@@ -113,10 +119,6 @@ body {
     flex-direction: column;
 }
 
-ol, ul {
-    list-style: none;
-}
-
 .task__item {
     margin-top: 5px;
     background-color: #f1f3f5;
@@ -134,12 +136,25 @@ ol, ul {
     align-items: center;
 }
 
+.task-type {
+    font-size: 40px;
+}
+
+.task-info__container p {
+    margin-left: 10px;
+    font-weight: 300;
+}
+
 .span-urgent {
     color: #e40404;
 }
 
-.task-type {
-    font-size: 40px;
+.span-important {
+    color: #028302;
+}
+
+.span-normal {
+    color: #f3a703;
 }
 
 .task__button--remove-task {
