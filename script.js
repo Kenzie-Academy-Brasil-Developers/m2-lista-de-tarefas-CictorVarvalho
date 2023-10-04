@@ -39,12 +39,12 @@ function createTaskItem(obj){
 
   span.classList.add("task-type");
   span.textContent = "•";
-  if (obj.type === "Urgente") {
+  if (obj.type.toLowerCase() === "urgente") {
     span.classList.add("span-urgent");
   }
-  else if (obj.type === "Importante") {
+  else if (obj.type.toLowerCase() === "importante") {
     span.classList.add("span-important");
-  } else if (obj.type === "Normal") {
+  } else if (obj.type.toLowerCase() === "normal") {
     span.classList.add("span-normal");
   }
 
@@ -70,7 +70,7 @@ form.addEventListener('submit', function(event){
   const ul = document.querySelector("ul");
   const inputTitle = document.querySelector(".form__input--text");
   const inputType = document.querySelector(".form__input--priority");
-  if (inputTitle.value === "" || inputType.value === "") {
+  if (inputTitle.value === "" || inputType.value === ""){
     alert("Preencha o título ou selecione o tipo da tarefa");
   } else {
     const newTask = {
